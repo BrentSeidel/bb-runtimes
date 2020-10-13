@@ -23,6 +23,8 @@ The list of supported boards is listed in build_rts.py within build_configs.
 The above call with generate the runtimes for <board1> <board2> in 'temp'
 and will build them, assuming the proper compiler is in the PATH.
 
+## building and installing a runtime
+
 To install the runtime in the compiler's default location, you will thus
 need to specify
 

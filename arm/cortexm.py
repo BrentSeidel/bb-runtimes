@@ -233,7 +233,7 @@ class Sam(ArmV7MTarget):
     def __init__(self, board):
         assert board in ('sam3x8e', 'sam4s', 'samg55'), "Unexpected SAM board %s" % board
         self.board = board
-        print self.board
+        print(self.board)
         super(Sam, self).__init__()
 
         self.add_linker_script(
@@ -249,7 +249,7 @@ class Sam(ArmV7MTarget):
             'arm/sam/%s/s-bbbopa.ads' % self.name,
             'arm/sam/%s/svd/i-sam.ads' % self.name,
             'arm/sam/%s/svd/i-sam-efc.ads' % self.name,
-            'arm/sam/%s/svd/i-sam-pmc.ads' % self.name)
+            'arm/sam/%s/svd/i-sam-pmc.ads' % self.name])
 
         # ravenscar support
         self.add_gnarl_sources(

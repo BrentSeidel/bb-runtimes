@@ -101,7 +101,7 @@ class Installer(object):
             # First: take the one given on the command line if any
             ret = os.path.abspath(descriptor)
         else:
-            # Next: try a relative path from the install directotry
+            # Next: try a relative path from the install directory
             fname = os.path.join(destination, rts_json_file)
             if os.path.exists(fname):
                 ret = os.path.normpath(fname)
